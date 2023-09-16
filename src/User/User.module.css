@@ -1,0 +1,9 @@
+.user-item {
+  border: 1px solid #a7a7a7;
+  margin: 1rem 0;
+  padding: 0.4rem;
+}
+
+.user-item::first-letter {
+  text-transform: capitalize;
+}
