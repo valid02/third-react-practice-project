@@ -1,7 +1,9 @@
+import UserInput from "./UserInput/UserInput";
+
 const App = () => {
   return (
     <div>
-      <h2>hello world</h2>
+      <UserInput />
     </div>
   );
 }
