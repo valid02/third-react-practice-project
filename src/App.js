@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import UserInput from './UserInput/UserInput';
-import UsersList from './UsersLIst/UsersList';
-import Modal from './Modal/Modal';
+import UserInput from './components/UserInput/UserInput';
+import UsersList from './components/UsersLIst/UsersList';
+import Modal from './components/Modal/Modal';
 
 const App = () => {
   const [users, setUsers] = useState([]);

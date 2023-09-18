@@ -27,10 +27,10 @@ const UserInput = props => {
     <div className={styles['input-box']}>
       <form onSubmit={submitFormHandler} >
         <div className={styles['input-box__control']}>
-          <label>Username</label>
-          <input type="text" value={username} onChange={changeUsernameHandler} />
-          <label>Age (Year)</label>
-          <input type='number' value={age} onChange={changeAgeHandler} />
+          <label htmlFor='username'>Username</label>
+          <input id='username' type="text" value={username} onChange={changeUsernameHandler} />
+          <label htmlFor='age'>Age (Year)</label>
+          <input id='age' type='number' value={age} onChange={changeAgeHandler} />
         </div>
         <button type="submit" className={styles['input-box__btn']}>Add User</button>
       </form>
