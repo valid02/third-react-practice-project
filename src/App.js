@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import UserInput from './components/UserInput/UserInput';
-import UsersList from './components/UsersLIst/UsersList';
+import UserInput from './components/Users/AddUser';
+import UsersList from './components/Users/UsersList';
 import Modal from './components/Modal/Modal';
 
 const App = () => {
