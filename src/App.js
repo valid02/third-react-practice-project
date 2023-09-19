@@ -9,11 +9,11 @@ const App = () => {
   const [modalText, setModalText] = useState('');
 
   const userInputHandler = user => {
-    if (user.username === '' || user.age === '') {
+    if (user.username.trim().lenght === 0 || user.age.trim().length === 0) {
       setIsOpen(true);
       setModalText('please enter a valid name and age (non-empty values).');
     }
-    else if (user.age < 0) {
+    else if (+user.age <= 0) {
       setIsOpen(true);
       setModalText('please enter a valid age (> 0).')
     }
