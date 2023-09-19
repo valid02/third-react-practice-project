@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Button from '../UI/Button';
 import Card from '../UI/Card';
-import styles from './UserInput.module.css';
+import styles from './AddUser.module.css';
 
-const UserInput = props => {
+const AddUser = props => {
   const [username, setUsername] = useState('');
   const [age, setAge] = useState('');
 
@@ -37,4 +37,4 @@ const UserInput = props => {
   );
 };
 
-export default UserInput;
+export default AddUser;

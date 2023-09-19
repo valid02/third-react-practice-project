@@ -1,6 +1,6 @@
-import styles from './Modal.module.css';
+import styles from './ErrorModal.module.css';
 
-const Modal = props => {
+const ErrorModal = props => {
   return (
     <div id='overly' className={styles['modal__overly']} onClick={props.overly}>
       <div className={styles['modal__body']}>
@@ -18,4 +18,4 @@ const Modal = props => {
   );
 };
 
-export default Modal;
+export default ErrorModal;

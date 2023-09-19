@@ -1,0 +1,24 @@
+.users {
+  width: 35rem;
+  max-width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.users ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.users li {
+  border: 1px solid #a7a7a7;
+  margin: 1rem 0;
+  padding: 0.4rem;
+}
+
+.users li::first-letter {
+  text-transform: capitalize;
+}

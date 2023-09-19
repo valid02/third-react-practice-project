@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import UserInput from './components/UserInput/UserInput';
-import UsersList from './components/UsersLIst/UsersList';
-import Modal from './components/Modal/Modal';
+import UserInput from './components/Users/AddUser';
+import UsersList from './components/Users/UsersList';
+import ErrorModal from './components/UI/ErrorModal';
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -40,7 +40,7 @@ const App = () => {
     <div>
       <UserInput user={userInputHandler} />
       <UsersList users={users} />
-      {isOpen && <Modal text={modalText} okButtonClick={clickButtonHandler} overly={ovarlyClickHandler} />}
+      {isOpen && <ErrorModal text={modalText} okButtonClick={clickButtonHandler} overly={ovarlyClickHandler} />}
     </div>
   );
 };
