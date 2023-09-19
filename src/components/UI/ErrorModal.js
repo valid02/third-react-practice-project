@@ -1,19 +1,22 @@
+import Card from './Card';
+import Button from './Button';
 import styles from './ErrorModal.module.css';
 
 const ErrorModal = props => {
   return (
-    <div id='overly' className={styles['modal__overly']} onClick={props.overly}>
-      <div className={styles['modal__body']}>
-        <div className={styles['modal__header']}>
-          <p>Invalid input</p>
+    <div>
+      <div className={styles.backdrop} onClick={props.onConfirm} />
+      <Card className={styles.modal}>
+        <header className={styles.header}>
+          <h2>{props.title}</h2>
+        </header>
+        <div className={styles.content}>
+          <p>{props.message}</p>
         </div>
-        <div className={styles['modal__text']}>
-          <p>{props.text}</p>
-        </div>
-        <div className={styles['modal__btn']}>
-          <button type="button" onClick={props.okButtonClick} >Okay</button>
-        </div>
-      </div>
+        <footer className={styles.actions}>
+          <Button onClick={props.onConfirm} >Okay</Button>
+        </footer>
+      </Card>
     </div>
   );
 };
